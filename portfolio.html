@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <section class="banner">
+ <header>
+    <a href="#" class="logo"><span>RED</span> ONE</a>
+    <ul class="main">
+        <li><a href="#">Home</a></li>
+  <li><a href="#">About Me</a></li>  
+    <li><a href="#">Mes projets</a></li>
+ <li>  <a href="#">Contact</a></li> 
+</ul>
+    
+ </header>
+ <div class="content">
+    <h3>Bonjour_</h3>
+    <h2>Je suis <br><span id="text">RADOUANE</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corporis ex incidunt voluptas ipsum odio. Deserunt ex quos cumque. Suscipit, repellat ex cumque quidem dicta autem!</p>
+<button>Hire Me </button>
+<button class="chat"> <ion-icon name="chatbubbles-outline" class="ic"></ion-icon>
+    Contact Me </button>
+    <img src="—Pngtree—paint brush color effect_4085610.png" alt="" class="pht">
+    <img src="057EF8C000000514-0-image-a-57_1442016574849-removebg-preview.png" alt="" class="me">
+    <ul class="sci">
+        <li> <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> </li>
+        <li> <a href="#"><ion-icon name="logo-linkedin"></ion-icon> </a></li>
+        <li> <a href="#"><ion-icon name="logo-instagram"></ion-icon></a> </li>
+        <li> <a href="#"><ion-icon name="logo-whatsapp"></ion-icon> </a> </li>
+    </ul>
+  <div class="mode" >
+ 
+    <ion-icon name="moon-outline" ></ion-icon>
+    <ion-icon name="sunny-outline"></ion-icon>
+  </div>
+
+ </div>
+ 
+
+
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+
+        let typingText = new Typed("#text", {
+        strings : ["RADOUANE_", "DEVELOPPER", "MARKETER_", "COPYWRITER_"],
+        loop:true,
+        typeSpeed : 100,
+        backSpeed : 50,
+        backDelay : 1000,
+    })
+
+
+        let banner = document.querySelector('.banner');
+        let mode = document.querySelector('.mode');
+        mode.onclick = function(){
+            banner.classList.toggle('night')
+        }
+
+    </script>
+    <!-- // let banner = document.querySelector('.banner');
+    // let mode = document.querySelector('.mode');
+    // mode.onclick = function(){
+    //      mode.classList.toggle('mode');
+    // }); -->
+   
+
+</script>
+</body>
+</html>
